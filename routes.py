@@ -4,6 +4,7 @@ from pichblog.forms import RegistrationForm, LoginForm
 from pichblog.models import User, Post
 
 
+
 posts = [
     {
         'author': 'Corey Schafer',
