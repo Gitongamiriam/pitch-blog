@@ -20,6 +20,9 @@ class User(db.Model):
         return f"User('{self.username}','{self.email},'{self.image_file}')"
     
 class Post(db.Model):
+    id = db.Column(db.Integer,primary_key=True)
+    username = db.Column(db.String(20), nullable=false)
+  
      
     
 
