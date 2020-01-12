@@ -5,7 +5,7 @@ from flask-sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] ='c4bd279f9afbb8'
-app.config['SQLALCHEMY_DATABASE_URL']='sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///site.db'
 db = SQLAlchemy(app)
 
 
@@ -15,6 +15,8 @@ class User(db.Model):
     email= db.Column(db.String(200),unique=True, nullable=False)
     image_file= db.Column(db.String(),nullable=False,default='default.jpg')
     password=db.Column(db.String(60),nullable=False)
+    posts = db.relationship('Post',backref='author', lazy=True)
+    
     
     def __repr__(self):
         return f"User('{self.username}','{self.email},'{self.image_file}')"
