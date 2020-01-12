@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, 
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -22,12 +22,12 @@ posts = [
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template(, posts=posts)
+    return render_template('home.htm', posts=posts)
 
 
 @app.route("/about")
 def about():
-    return render_template(, title='About')
+    return render_template('about.htm', title='About')
 
 
 
