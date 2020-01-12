@@ -5,7 +5,7 @@ from flask-sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] ='c4bd279f9afbb8'
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URl']='sqlite:///site.db'
 db = SQLAlchemy(app)
 
 
@@ -26,6 +26,7 @@ class Post(db.Model):
     title= db.Column(db.String(180), nullable=False)
     date_posted = db.Column(db.DateTime,nullable=False,default= datetime.utcnow())
     content = db.Column(db.Text,nullable = False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     
     def __repr__(self):
         return f"Post('{self.title}','{self.date_posted}')"
