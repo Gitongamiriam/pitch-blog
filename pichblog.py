@@ -14,7 +14,9 @@ class User(db.Model):
     username = db.Column(db.String(20),unique=True, nullable=false)
     email= db.Column(db.String(200),unique=True, nullable=false)
     image_file= db.Column(db.String(),nullable=false,default='default.jpg')
-  
+    password=db.Column(db.String(60),nullable=false)
+    
+    
    
     
    
