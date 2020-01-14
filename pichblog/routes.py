@@ -107,4 +107,5 @@ def account():
                            image_file=image_file, form=form)
 @app.route("/post/new")
 @login_required
-def new_post():    
+def new_post():
+    return render_template('create_post.htm', title='New Post')
