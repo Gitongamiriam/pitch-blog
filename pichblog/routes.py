@@ -105,3 +105,6 @@ def account():
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('account.htm', title='Account',
                            image_file=image_file, form=form)
+@app.route("/post/new")
+@login_required
+def new_post():    
