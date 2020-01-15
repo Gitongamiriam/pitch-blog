@@ -13,8 +13,7 @@ Output: User is redirected to the home page with new navigation bar that allows 
 The User can now create a post
 input:The User clicks on the new post link and adds his new post.
 output: The new post is displayed on the home page.
-User can update post.quote
-quote
+User can update post.
 Input: User clicks on the post and he has created.
 Output: A redirection to a page that allows them to update the post and submit.
 User can delete Post
