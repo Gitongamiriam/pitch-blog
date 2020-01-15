@@ -1,8 +1,12 @@
-PICHBLOG
-Description
+## PICHBLOG
+
+
+## DESCRIPTION
+
 This is a python-Flask application that has been created to enable users to create and post pitches.A User can be able to create an account and their information will be saved into the databse of the website. The User is able to create a post whereby they will be able to update and delete posts at free will.
 
-BDD
+## B.D.D
+
 On loading the website the user can see the homepage that has Posts that have been posted by others.
 The User needs to Create an account to be able to post anything.
 input: The user credentials are required for account Creation.
@@ -25,19 +29,24 @@ Use the command git clone to clone the aplication at https://github.com/Gitongam
 After cloning navigate to the project.
 Run pip install to install all the dependencies
 Now run the project using your terminal with the command python3.6 app.py
-Technologies Used
+
+## TECHNOLOGIES USED
+
 PYTHON
 PIP
 FLASK FRAMEWORK
 BOOTSTRAP
 CSS
 POSTGRESS
-Licence
-The MIT License (MIT) Copyright (c) 2020 MIRIAM GITONGA
+
+## Licence
+
+## The MIT License (MIT) Copyright (c) 2020 MIRIAM GITONGA
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-Contact Details
+
+## Contact Details
 You can reach me through: miriam 0795292964 /miriamgitonga2019@gmail.com
-Author
+## Author
 Miriam Gitonga
