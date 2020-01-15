@@ -105,7 +105,7 @@ def new_post():
     return render_template('create_post.htm', title='New Post',
                            form=form, legend='New Post')
 
-
+    new_post = Post(title=title,content=pitch,user=current_user,likes=0,dislikes=0)
 
 @app.route("/post/<int:post_id>")
 def post(post_id):

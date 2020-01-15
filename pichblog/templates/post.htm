@@ -1,9 +1,9 @@
 {% extends "layout.htm" %}
 {% block content %}
-  <article class="media content-section mt-5">
+  <article class="media content-section mt-5 p-5">
     <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
-    <div class="media-body">
-      <div class="article-metadata">
+    <div class="media-body d-flex">
+      <div class="article-metadata d-flex">
         <a class="mr-2" href="#">{{ post.author.username }}</a>
         <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
         {% if post.author == current_user %}
@@ -36,4 +36,4 @@
       </div>
     </div>
   </div>
-{% endblock content %}
+{% endblock %}
